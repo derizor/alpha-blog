@@ -7,6 +7,6 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  resources :articles, only: [:index]
+  resources :articles, only: [:index, :new, :create, :edit, :update]
 
 end
